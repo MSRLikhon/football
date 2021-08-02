@@ -165,9 +165,6 @@ margin-top: 130px;
 @media only screen and (max-width: 768px) {
     /* --------top section-------- */
     .watch-live-banner{
-        display: flex;
-        background-color: #2D25A0;
-        align-items: center;
         flex-direction: column;
     }
     .watch-live{
@@ -175,40 +172,32 @@ margin-top: 130px;
         margin-left: 16px;
     }
     .watch-live-pic{
-        width: 50%;
         margin-top: 50px;
-        margin-left: 20px;
+    }
+    .banner-title{
+        font-size: 28px;
     }
     .watch-live-pic img{
         width: 329px;
         height: 260px;
     }
-    .banner-title{
-        font-size: 28px;
-        font-weight: 700;
-    }
     /* ---------players section--------- */
     .players{
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 70px auto;
-        grid-row-gap: 27px;
-        justify-items: center;
     }
     /* --------News section------- */
     
     .news-section{
         margin-left: 15px;
         margin-right: 15px;
-        margin-bottom: 20px;
     }
-        .latest-news{
-        display: flex;
+    .latest-news{
         flex-direction: column;
     }
     .news{
         margin-bottom: 20px;
-        border-bottom: 3px solid rgb(189, 189, 189);
+        border-bottom: 3px solid rgb(202, 202, 202);
     }
     /* ------Teams Section-------- */
     .teams-section{
@@ -222,11 +211,6 @@ margin-top: 130px;
         justify-items: center;
     }
     /* -------Footer-------- */
-    .footer{
-        text-align: center;
-        margin-top: 130px;
-        width: 100%;
-        }
     .footer img{
         width: 275px;
         height: 63px;
