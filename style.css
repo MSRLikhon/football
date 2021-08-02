@@ -94,9 +94,9 @@ body{
 /* News */
 /* ------------ */
 .news-section, .teams-section{
-margin-left: 100px;
-margin-right: 100px;
-margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
 }
 .latest-news, .teams{
     display: flex;
