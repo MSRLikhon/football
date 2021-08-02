@@ -1,0 +1,228 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+/* common style */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* top banner : watch live */
+.watch-live-banner{
+    display: flex;
+    background-color: #2D25A0;
+    align-items: center;
+}
+.watch-live{
+    width: 50%;
+    margin-top: 153px;
+    margin-right: 20px;
+    margin-bottom: 86px;
+    margin-left: 156px;
+}
+.watch-live-pic{
+    width: 50%;
+    margin-top: 153px;
+    margin-right: 141px;
+    margin-bottom: 86px;
+    margin-left: 20px;
+}
+.banner-title{
+    font-size: 42px;
+    font-weight: 700;
+}
+.watch-live-button{
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 1s linear;
+}
+.watch-live-button:hover {
+    transform: scale(1.25);
+}
+.banner-title h1{
+    margin: 0;
+    color: #FFFFFF;
+}
+.watch-live-button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+.watch-live-pic img{
+    width: 556.01px;
+    height: 438px;
+}
+  /* ---------------- */
+ /* players section */
+/* -------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 70px 180px;
+    grid-row-gap: 27px;
+    justify-items: center;
+}
+.player{
+    width: 330px;
+    height: 474px; 
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player-pic img{
+    width: 300px;
+    height: 256px;
+}
+.player-detail{
+    width: 300px;
+    height: 154px;
+    padding: 15px;
+}
+.player-detail h1{
+    font-size: 28px;
+    margin: 0;
+}
+.player-detail p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ------------- */
+/* News */
+/* ------------ */
+.news-section, .teams-section{
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 20px;
+}
+.latest-news, .teams{
+    display: flex;
+    justify-content: space-between;
+}
+.news{
+    margin: 0 20px;
+}
+.news h4{
+    color: gray;
+}
+.news img{
+    width: 100%;
+}
+/* ------------ */
+/* Teams Section */
+/* ------------- */
+.team{
+    margin: 0 10px;
+}
+.team-logo{
+    background-color: lightgrey;
+    padding:5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.team-name{
+    background-color: rgb(230, 230, 230);
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.team-logo img{
+    width: 120px;
+    height: 150px;
+}
+/* ----------footer------ */
+.footer{
+text-align: center;
+margin-top: 130px;
+}
+.footer img{
+    width: 484px;
+    height: 110px;
+}
+.icons{
+    margin-top: 20px;
+}
+.fab{
+    font-size: 32px;
+    margin: 0 14px;
+    color: #969BAB;
+}
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram-square:hover, .fa-youtube-square:hover{
+    color: black;
+}
+.footer div p{
+    font-size: 24px;
+}
+
+/* ----------------- */
+/* ----media queries--------- */
+/* ------------------ */
+/* -----mobile------- */
+@media only screen and (max-width: 768px) {
+    /* --------top section-------- */
+    .watch-live-banner{
+        display: flex;
+        background-color: #2D25A0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .watch-live{
+        margin-top: 112px;
+        margin-left: 16px;
+    }
+    .watch-live-pic{
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .watch-live-pic img{
+        width: 329px;
+        height: 260px;
+    }
+    .banner-title{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    /* ---------players section--------- */
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 70px auto;
+        grid-row-gap: 27px;
+        justify-items: center;
+    }
+    /* --------News section------- */
+    .latest-news{
+        display: flex;
+        flex-direction: column;
+    }
+    .news{
+        margin-bottom: 20px;
+        border-bottom: 3px solid rgb(189, 189, 189);
+    }
+    /* ------Teams Section-------- */
+    .teams-section{
+       margin: 0 10px;
+        }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px auto;
+        grid-row-gap: 20px;
+        justify-items: center;
+    }
+    /* -------Footer-------- */
+    .footer{
+        text-align: center;
+        margin-top: 130px;
+        width: 100%;
+        }
+    .footer img{
+        width: 275px;
+        height: 63px;
+        }
+}
